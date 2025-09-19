@@ -133,7 +133,7 @@ def generate_project_metadata():
         "project_root": str(PROJECT_ROOT),
         "files": scan_folder(PROJECT_ROOT)
     }
-    output_file = PROJECT_ROOT.parent / "project_full_metadata.json"
+    output_file = PROJECT_ROOT.parent / "informacoes_sistema.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=4, ensure_ascii=False)
     print(f"Metadata completa gerada em {output_file}")

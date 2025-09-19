@@ -32,6 +32,9 @@ ALLOWED_HOSTS = [
 
 # Application definition
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,7 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
 ]
+
+# Configurações específicas do sistema multi-tenant
+MULTI_TENANT_SETTINGS = {
+    'MASTER_COMPANY_SLUG': 'syncwave',
+    'DEFAULT_USER_ROLE': 'employee',
+    'ENABLE_COMPANY_ISOLATION': True,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
