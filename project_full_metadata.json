@@ -1,0 +1,209 @@
+{
+    "project_root": "C:\\Users\\Micael\\Desktop\\syncWave\\djangoapp",
+    "files": [
+        {
+            "path": "manage.py",
+            "hash": "9b1525fa54c1d3dfe0cbaeaf46828a3f",
+            "type": "python",
+            "classes": [],
+            "functions": [
+                {
+                    "name": "main",
+                    "args": [],
+                    "docstring": "Run administrative tasks.",
+                    "body": [
+                        "'Run administrative tasks.'",
+                        "os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')",
+                        "try:\n    from django.core.management import execute_from_command_line\nexcept ImportError as exc:\n    raise ImportError(\"Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?\") from exc",
+                        "execute_from_command_line(sys.argv)"
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "requirements.txt",
+            "hash": "6964f31387e8de8d98f940d7a5ca617b",
+            "type": "other"
+        },
+        {
+            "path": "accounts\\admin.py",
+            "hash": "e3dc717de887db03a015667a5fec59d8",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "accounts\\apps.py",
+            "hash": "25134a3eb411e60820d581af5d96fa2c",
+            "type": "python",
+            "classes": [
+                {
+                    "name": "AccountsConfig",
+                    "fields": [
+                        {
+                            "name": "default_auto_field",
+                            "type": null,
+                            "args": {}
+                        },
+                        {
+                            "name": "name",
+                            "type": null,
+                            "args": {}
+                        }
+                    ]
+                }
+            ],
+            "functions": []
+        },
+        {
+            "path": "accounts\\models.py",
+            "hash": "c8f36d215f38f553a10b0cb2338c1d15",
+            "type": "python",
+            "classes": [
+                {
+                    "name": "Empresa",
+                    "fields": [
+                        {
+                            "name": "nome",
+                            "type": "CharField",
+                            "args": {
+                                "max_length": 255
+                            }
+                        },
+                        {
+                            "name": "cnpj",
+                            "type": "CharField",
+                            "args": {
+                                "max_length": 20,
+                                "unique": true
+                            }
+                        },
+                        {
+                            "name": "endereco",
+                            "type": "TextField",
+                            "args": {
+                                "blank": true,
+                                "null": true
+                            }
+                        },
+                        {
+                            "name": "telefone",
+                            "type": "CharField",
+                            "args": {
+                                "max_length": 20,
+                                "blank": true,
+                                "null": true
+                            }
+                        },
+                        {
+                            "name": "responsavel",
+                            "type": "CharField",
+                            "args": {
+                                "max_length": 255,
+                                "blank": true,
+                                "null": true
+                            }
+                        },
+                        {
+                            "name": "observacao",
+                            "type": "TextField",
+                            "args": {
+                                "blank": true,
+                                "null": true
+                            }
+                        },
+                        {
+                            "name": "trial",
+                            "type": "BooleanField",
+                            "args": {
+                                "default": false
+                            }
+                        },
+                        {
+                            "name": "trial_expira_em",
+                            "type": "DateField",
+                            "args": {
+                                "blank": true,
+                                "null": true
+                            }
+                        },
+                        {
+                            "name": "ativo",
+                            "type": "BooleanField",
+                            "args": {
+                                "default": true
+                            }
+                        },
+                        {
+                            "name": "data_criacao",
+                            "type": "DateTimeField",
+                            "args": {
+                                "auto_now_add": true
+                            }
+                        }
+                    ]
+                }
+            ],
+            "functions": []
+        },
+        {
+            "path": "accounts\\tests.py",
+            "hash": "465b7e9f69bfd158c850cdfbc7306818",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "accounts\\views.py",
+            "hash": "f467fa232324ad139aaecd0df7698f3f",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "accounts\\__init__.py",
+            "hash": "d41d8cd98f00b204e9800998ecf8427e",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "project\\asgi.py",
+            "hash": "5715720c6a37daf83cbca622dcf07aa2",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "project\\settings.py",
+            "hash": "6ddc9f6642e68081080613181ae26cd4",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "project\\urls.py",
+            "hash": "a040a8c926edcf6e26303c73a3c119a5",
+            "type": "python",
+            "classes": [],
+            "functions": [],
+            "urls": [
+                "path('admin/', admin.site.urls),"
+            ]
+        },
+        {
+            "path": "project\\wsgi.py",
+            "hash": "7b8601b4c22431f8974e822722dfcf4d",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        },
+        {
+            "path": "project\\__init__.py",
+            "hash": "d41d8cd98f00b204e9800998ecf8427e",
+            "type": "python",
+            "classes": [],
+            "functions": []
+        }
+    ]
+}
